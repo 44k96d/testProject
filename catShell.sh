@@ -4,4 +4,5 @@ find . -name "*.java" -or -name "*.cpp" -or -name "*.h" -or -name "*.c" | while 
     echo $hoge;
     cp $hoge hoge.txt;
     cat license.txt hoge.txt > $hoge;
+    svn propset svn:mime-type "text/plain; charset=utf-8" $hoge
 done
